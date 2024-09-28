@@ -8,6 +8,19 @@
     flex-direction: column;
     align-items: center;
     padding-top: 10rem;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 10rem;
+        right: 0; 
+        background-image: url("../image/Architecture.png");
+        background-size: cover;
+        width: 28.6rem;
+        height: 54.5rem;
+        transform: translateX(-0%);
+    }
 }
 
 .about-us-content {
