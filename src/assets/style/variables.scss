@@ -3,7 +3,6 @@ $white: #FFFFFF;
 $black: #0E0E0E;
 $gray: #555555;
 $orange: #FB5B11;
-$pointer: pointer;
 
 // Шрифты
 $font-family: 'Arial', sans-serif;
@@ -11,7 +10,7 @@ $font-size-base: 1.6rem;
 $font-size-middle: 2.4rem;
 $font-size-large: 3.2rem;
 $font-size-headers: 5.2rem;
-b
+
 
 $weight-regular: 400;
 $weight-bold-m: 600;
@@ -22,3 +21,6 @@ $weight-bold-l: 700;
 $padding-small: 8px;
 $padding-medium: 4.7rem;
 $padding-large: 31.2rem;
+
+//Курсор мыши при наведении
+$cursor-pointer: pointer;
