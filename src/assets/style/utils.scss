@@ -4,6 +4,7 @@
   font-weight: $weight-bold-m;
   color: $black;
   line-height: 1.2;
+  text-transform: capitalize;
 }
 
 .sub-heading {
@@ -12,10 +13,12 @@
   font-weight: $weight-bold-m;
   color: $black;
   line-height: 1.6;
+  text-transform: capitalize;
 }
 
 .container {
   max-width: 192rem;
+  margin: 0 auto;
   padding: 0 $padding-large;
   margin: 0 auto;
 }

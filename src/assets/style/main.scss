@@ -3,6 +3,9 @@
 @import 'utils';
 @import 'button';
 @import './about.scss';
+@import "blocks/process-section";
+@import "blocks/testimonials-section";
+@import "./hero-section.scss";
 
 *,
 *::before,
@@ -20,4 +23,3 @@ html {
 body {
   box-sizing: border-box;
 }
-
