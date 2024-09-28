@@ -1,6 +1,5 @@
 .hero-section {
   width: 100%;
-  height: 1001px;
 
   &__content {
     background-image: linear-gradient(
@@ -24,7 +23,7 @@
         color: $white;
         font-size: 158px;
         font-weight: $weight-bold-m;
-        line-height: 138px;
+        line-height: 0.87;
         text-transform: capitalize;
         margin-bottom: 6px;
       }
@@ -57,9 +56,9 @@
   }
   &__tractor {
     position: absolute;
-    width: 538.87px;
-    height: 346.84px;
-    left: 679px;
+    width: 539px;
+    height: 347px;
+    left: 30%;
     top: 655px;
   }
   &__hook {
@@ -67,6 +66,5 @@
     width: 78px;
     height: 237px;
     left: 69px;
-    top: 850px;
   }
 }
