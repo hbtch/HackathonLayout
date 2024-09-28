@@ -31,3 +31,19 @@
   line-height: 1.6;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex_align-items-center {
+  align-items: center;
+}
+
+.flex_center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex_column {
+  flex-direction: column;
+}

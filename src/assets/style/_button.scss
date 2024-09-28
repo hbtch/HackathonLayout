@@ -7,6 +7,8 @@
   display: flex;
   align-items: center;
   font-size: $font-size-base;
+  font-weight: $weight-bold-m;
+  text-transform: capitalize;
   gap: 1rem; //отступ между текстом с стрелкой
   border: solid 1px transparent;
   transition: all 0.3s;
@@ -15,6 +17,10 @@
 .button-orange {
   background-color: $orange;
   color: $white;
+
+  & svg path {
+    fill: $white;
+  }
 }
 
 .button-orange:hover,
@@ -22,12 +28,20 @@
   background-color: $white;
   border-color: $black;
   color: $black;
+
+  & svg path {
+    fill: $black;
+  }
 }
 
 .button-white {
   background-color: $white;
   border-color: $black;
   color: $black;
+
+  & svg path {
+    fill: $black;
+  }
 }
 
 .button-white:hover,
@@ -35,4 +49,8 @@
   background-color: $orange;
   border-color: transparent;
   color: $white;
+
+  & svg path {
+    fill: $white;
+  }
 }
