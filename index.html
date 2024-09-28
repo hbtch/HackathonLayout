@@ -1,64 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
 
     <link rel="stylesheet" href="src/assets/style/main.css">
     <title>Vite App</title>
-</head>
-<body>
-<div id="app">
-    <header class="header"></header>
-    <main>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header"></header>
+      <main>
         <section class="hero-section">
-            <div class="hero-section__content">
-                <div class="hero-section__info">
-                    <h1 class="heading">Experts in construction</h1>
-                    <p class="paragraph">
-                        The construction industry boasts a diverse range of experts,
-                        each playing a crucial role in bringing a project from vision to
-                        reality.
-                    </p>
-                    <a href="#" class="button button-orange"
-                    >Explore More
-                        <img src="./src/assets/image/Arrow.svg" alt="Arrow"/>
-                    </a>
-                </div>
-                <div class="hero-section__picture">
-                    <img
-                            class="hero-section__img"
-                            src="./src/assets/image/cheerful-engineer-hero-section.png"
-                            alt="engineer"
-                    />
-                </div>
+          <div class="hero-section__content">
+            <div class="hero-section__info">
+              <h1 class="heading">Experts in construction</h1>
+              <p class="paragraph">
+                The construction industry boasts a diverse range of experts,
+                each playing a crucial role in bringing a project from vision to
+                reality.
+              </p>
+              <a href="#" class="button button-orange"
+                >Explore More
+                <img src="./src/assets/image/Arrow.svg" alt="Arrow" />
+              </a>
             </div>
-            <img
-                    class="hero-section__tractor"
-                    src="./src/assets/image/tractor.png"
-                    alt="tractor"
-            />
-            <img
-                    class="hero-section__hook"
-                    src="./src/assets/image/hook.png"
-                    alt="hook"
-            />
+            <div class="hero-section__picture">
+              <img
+                class="hero-section__img"
+                src="./src/assets/image/cheerful-engineer-hero-section.png"
+                alt="engineer"
+              />
+            </div>
+          </div>
+          <img
+            class="hero-section__tractor"
+            src="./src/assets/image/tractor.png"
+            alt="tractor"
+          />
+          <img
+            class="hero-section__hook"
+            src="./src/assets/image/hook.png"
+            alt="hook"
+          />
         </section>
         <section class="services"></section>
         <section class="about" id="about"></section>
@@ -69,12 +68,14 @@
                 <h2 class="sub-heading">How To Process</h2>
                 <h3 class="heading">Steps in the Construction Process</h3>
                 <ul class="tab-list flex">
-                    <li class="tab-list_item tab-list_item-active">01. Planning And Design</li>
-                    <li class="tab-list_item">02. Permitting and Approvals</li>
-                    <li class="tab-list_item">03. Foundation Construction</li>
+                    <li class="tab-list_item tab-list_item-active" data-id="0">01. Planning And Design</li>
+                    <li class="tab-list_item" data-id="1">02. Permitting and Approvals</li>
+                    <li class="tab-list_item" data-id="2">03. Foundation Construction</li>
                 </ul>
                 <div class="process_content">
-                    <img src="src/assets/image/Add%20Your%20Image%20Hare.png" alt="video">
+                    <div class="process_content-wrapper flex flex_center">
+                        <video class="process-video" src="src/assets/video/planning.mp4"></video>
+                    </div>
                     <button class="play-btn">&nbsp;</button>
                 </div>
             </div>
@@ -148,9 +149,9 @@
         </section>
         <section class="price" id="price"></section>
         <section class="blog" id="blog"></section>
-    </main>
-    <footer class="footer" id="contact"></footer>
-</div>
-<script type="module" src="/main.js"></script>
-</body>
+      </main>
+      <footer class="footer" id="contact"></footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
