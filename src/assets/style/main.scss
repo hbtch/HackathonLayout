@@ -2,9 +2,11 @@
 @import 'mixins';
 @import 'utils';
 @import 'button';
+@import "./hero-section.scss";
+
 @import "blocks/process-section";
 @import "blocks/testimonials-section";
-@import "./hero-section.scss";
+@import "blocks/team-section";
 
 *,
 *::before,
