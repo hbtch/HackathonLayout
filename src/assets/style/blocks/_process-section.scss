@@ -51,7 +51,7 @@
   }
 }
 
-.tab-list {
+.progress-tab-list {
   list-style: none;
   gap: 2.4rem;
   margin: 3.7rem 0 8rem 0;
@@ -59,7 +59,9 @@
   font-size: $font-size-middle;
   color: $black;
   width: 100%;
+}
 
+.tab-list {
   &_item {
     width: 100%;
     height: 8rem;
