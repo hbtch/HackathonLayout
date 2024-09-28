@@ -1,4 +1,3 @@
-
 .heading {
   font-family: 'Jost', sans-serif;
   font-size: $font-size-headers;
@@ -18,6 +17,7 @@
 .container {
   max-width: 192rem;
   padding: 0 $padding-large;
+  margin: 0 auto;
 }
 
 .paragraph {
