@@ -50,19 +50,14 @@
                 background-color: orange; 
             }
         }
-        &-title {
-            @extend .heading; 
-            text-align: left;
-            padding-top: 2rem;
-        }
     }
-
 
 .about-us-info {
     //width: 43.9rem;
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     flex-grow: 1;
 
     &-description {
@@ -95,7 +90,14 @@
         }
     }
 }
-.about-us__info-experience-text {
+.about-us-content-title {
+    &-right {
+        @extend .heading; 
+        text-align: left;
+        padding-top: 2rem;
+    }
+}
+.about-us-info-experience-text {
     position: relative;
     font-size: $font-size-large;
     color: $black;
