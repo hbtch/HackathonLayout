@@ -1,0 +1,23 @@
+
+.heading {
+  font-family: 'Jost', sans-serif;
+  font-size: $font-size-headers;
+  font-weight: $weight-bold-m;
+  line-height: 1.2;
+}
+
+.sub-heading {
+  font-family: 'Jost', sans-serif;
+  font-size: $font-size-base;
+  font-weight: $weight-bold-m;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 192rem;
+  padding: 0 $padding-large;
+}
+
+
+
+

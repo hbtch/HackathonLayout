@@ -1,2 +1,19 @@
 @import 'variables';
 @import 'mixins';
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;}
+
