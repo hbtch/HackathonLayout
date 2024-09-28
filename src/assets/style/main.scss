@@ -1,9 +1,10 @@
-@import "variables";
-@import "mixins";
-@import "utils";
-@import "button";
-
+@import 'variables';
+@import 'mixins';
+@import 'utils';
+@import 'button';
+@import "blocks/process-section";
 @import "./hero-section.scss";
+
 *,
 *::before,
 *::after {
