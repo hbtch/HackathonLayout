@@ -38,10 +38,20 @@
 
   &_content {
     position: relative;
+
+    &-wrapper {
+      max-width: 100%;
+      height: 54.1rem;
+      overflow: hidden;
+    }
+  }
+
+  &-video {
+    width: 100%;
   }
 }
 
-.tab-list {
+.progress-tab-list {
   list-style: none;
   gap: 2.4rem;
   margin: 3.7rem 0 8rem 0;
@@ -49,7 +59,9 @@
   font-size: $font-size-middle;
   color: $black;
   width: 100%;
+}
 
+.tab-list {
   &_item {
     width: 100%;
     height: 8rem;
@@ -61,7 +73,11 @@
     justify-content: center;
     font-weight: $weight-bold-m;
     text-align: center;
-    transition: all 0.3s;
+    transition: all 0.2s;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &_item-active {
@@ -69,7 +85,7 @@
     padding-bottom: 3.3rem;
     background-color: $orange;
     color: $white;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 55% 89%, 50% 100%, 45% 89%, 0% 89%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 54% 89%, 50% 100%, 46% 89%, 0% 89%);
   }
 }
 
@@ -83,6 +99,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border: $orange;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: all 0.2s;
+
+  &-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 
   &::after {
     content: '';
@@ -95,6 +121,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     clip-path: polygon(0% 0%, 100% 50%, 100% 50%, 0% 100%);
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
