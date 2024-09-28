@@ -1,63 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
     />
 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="src/assets/style/main.css">
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app">
-      <header class="header"></header>
-      <main>
+</head>
+<body>
+<div id="app">
+    <header class="header"></header>
+    <main>
         <section class="hero-section">
-          <div class="hero-section__content">
-            <div class="hero-section__info">
-              <h1 class="heading">Experts in construction</h1>
-              <p class="paragraph">
-                The construction industry boasts a diverse range of experts,
-                each playing a crucial role in bringing a project from vision to
-                reality.
-              </p>
-              <a href="#" class="button button-orange"
-                >Explore More
-                <img src="./src/assets/image/Arrow.svg" alt="Arrow" />
-              </a>
+            <div class="hero-section__content">
+                <div class="hero-section__info">
+                    <h1 class="heading">Experts in construction</h1>
+                    <p class="paragraph">
+                        The construction industry boasts a diverse range of experts,
+                        each playing a crucial role in bringing a project from vision to
+                        reality.
+                    </p>
+                    <a href="#" class="button button-orange"
+                    >Explore More
+                        <img src="./src/assets/image/Arrow.svg" alt="Arrow"/>
+                    </a>
+                </div>
+                <div class="hero-section__picture">
+                    <img
+                            class="hero-section__img"
+                            src="./src/assets/image/cheerful-engineer-hero-section.png"
+                            alt="engineer"
+                    />
+                </div>
             </div>
-            <div class="hero-section__picture">
-              <img
-                class="hero-section__img"
-                src="./src/assets/image/cheerful-engineer-hero-section.png"
-                alt="engineer"
-              />
-            </div>
-          </div>
-          <img
-            class="hero-section__tractor"
-            src="./src/assets/image/tractor.png"
-            alt="tractor"
-          />
-          <img
-            class="hero-section__hook"
-            src="./src/assets/image/hook.png"
-            alt="hook"
-          />
+            <img
+                    class="hero-section__tractor"
+                    src="./src/assets/image/tractor.png"
+                    alt="tractor"
+            />
+            <img
+                    class="hero-section__hook"
+                    src="./src/assets/image/hook.png"
+                    alt="hook"
+            />
         </section>
         <section class="services"></section>
         <section class="about" id="about"></section>
@@ -101,20 +102,55 @@
                     <ul class="author_photo-list flex flex_column flex_align-items-center">
                         <li class="author_photo-item"><img src="src/assets/image/Add%20Your%20Image%20Hare.png"
                                                            alt="photo"></li>
-                        <li class="author_photo-item author_photo-item-active"><img src="src/assets/image/Add%20Your%20Image%20Hare.png"
-                                                           alt="photo"></li>
+                        <li class="author_photo-item author_photo-item-active"><img
+                                src="src/assets/image/Add%20Your%20Image%20Hare.png"
+                                alt="photo"></li>
                         <li class="author_photo-item"><img src="src/assets/image/Add%20Your%20Image%20Hare.png"
                                                            alt="photo"></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="team" id="team"></section>
+        <section class="team" id="team">
+            <div class="container flex">
+                <div class="team_text-box flex flex_column">
+                    <h2 class="sub-heading">Our Team Members</h2>
+                    <h3 class="heading">Our Dedicated Team<br>Members.</h3>
+                    <p class="paragraph">In today's world, we're bombarded with choices. From streaming
+                        services to meal kits, it can be overwhelming to find the best option.</p>
+                    <a class="button button-white">
+                        <p>See all member</p>
+                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.247423 16.3415C-0.116259 16.7571 -0.0741412 17.3889 0.341495 17.7526C0.757132 18.1163 1.38889 18.0741 1.75258 17.6585L0.247423 16.3415ZM15.9978 0.933481C15.961 0.38242 15.4845 -0.0345222 14.9335 0.00221496L5.95341 0.600887C5.40235 0.637624 4.98541 1.11413 5.02215 1.66519C5.05889 2.21625 5.53539 2.63319 6.08645 2.59646L14.0687 2.0643L14.6009 10.0466C14.6376 10.5976 15.1141 11.0146 15.6652 10.9779C16.2163 10.9411 16.6332 10.4646 16.5965 9.91355L15.9978 0.933481ZM1.75258 17.6585L15.7526 1.65851L14.2474 0.341496L0.247423 16.3415L1.75258 17.6585Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <img class='team-photo' src="src/assets/image/Add%20Your%20Image%20Hare.png" alt="photo">
+                <ul class="team_list flex flex_column">
+                    <li class="team_list-item flex flex_column">
+                        <p class="author-name">Wade Warren</p>
+                        <p class="author-job">Architect</p>
+                    </li>
+                    <li class="team_list-item flex flex_column">
+                        <p class="author-name author-name-active">Brooklyn Simmons</p>
+                        <p class="author-job">Architect Designer</p>
+                    </li>
+                    <li class="team_list-item flex flex_column">
+                        <p class="author-name">Jonson Duoing</p>
+                        <p class="author-job">Architect</p>
+                    </li>
+                    <li class="team_list-item flex flex_column">
+                        <p class="author-name">Esther Howard</p>
+                        <p class="author-job">Architect</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section class="price" id="price"></section>
         <section class="blog" id="blog"></section>
-      </main>
-      <footer class="footer" id="contact"></footer>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    </main>
+    <footer class="footer" id="contact"></footer>
+</div>
+<script type="module" src="/main.js"></script>
+</body>
 </html>
