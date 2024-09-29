@@ -1,7 +1,9 @@
-@import 'variables';
-@import 'mixins';
-@import 'utils';
-@import 'button';
+@import "variables";
+@import "mixins";
+@import "utils";
+@import "button";
+
+@import "header.scss";
 
 @import "blocks/about";
 @import "blocks/status-company";
