@@ -179,11 +179,11 @@
         background: none;
         border: none;
         font-size: 3rem;
-        color: $orange;
+        color: $black;
         cursor: pointer;
 
         &:hover {
-            color: darken($orange, 10%);
+            color: $orange;
         }
     }
 
@@ -195,5 +195,17 @@
         transform: rotate(0deg); 
     }
 }
+@media (max-width: 376px) {
+    .about-us::after {
+        display: none;
+        content: none;
+    }
+}
 
+@media (max-width: 1441px) {
+    .about-us::after {
+        display: none;
+        content: none;
+    }
+}
 
