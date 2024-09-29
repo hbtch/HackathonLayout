@@ -32,6 +32,7 @@
 
 .projects__line  {
   width: 1rem;
+  margin-right: 1rem;
 }
 
 .projects__gallery {
@@ -66,7 +67,7 @@
 .projects__button {
   background-color: transparent;
   border: none;
-  font-size: 24px;
+  font-size: 4.8rem;
   cursor: pointer;
   color: $orange;
   padding: 10px;
@@ -110,6 +111,10 @@
   text-align: center;
   font-size: 14px;
   z-index: 100;
+}
+
+.projects__image-wrapper {
+  position: relative;
 }
 
 .projects__image-wrapper:hover .projects__description {
