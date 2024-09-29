@@ -1,0 +1,44 @@
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  display: flex;
+}
+.header__logo {
+  padding: 30px 264px 40px 63px;
+  display: inline-block;
+  background-image: url(../image/logo_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+
+  &__wrapper {
+    background-color: black;
+  }
+}
+.navigation__top {
+  display: flex;
+}
+.navigation__social {
+  display: flex;
+}
+.navigatoin__menu {
+  display: flex;
+}
+.navigation__phone {
+  background-color: black;
+  display: flex;
+
+  &-link {
+    padding: 20px;
+    background: $orange;
+  }
+}

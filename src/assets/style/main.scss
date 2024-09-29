@@ -3,12 +3,12 @@
 @import "utils";
 @import "button";
 
-@import "header.scss";
+@import "blocks/header.scss";
 
 @import "blocks/about";
 @import "blocks/status-company";
 
-@import "./hero-section.scss";
+@import "blocks/hero-section.scss";
 
 @import "blocks/process-section";
 @import "blocks/testimonials-section";
