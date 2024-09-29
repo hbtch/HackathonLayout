@@ -1,2 +1,2 @@
 import './src/assets/style/main.scss';
-import './aboutUs'
+import './src/assets/js/aboutUs'
