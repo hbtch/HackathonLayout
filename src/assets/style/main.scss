@@ -1,7 +1,9 @@
-@import 'variables';
-@import 'mixins';
-@import 'utils';
-@import 'button';
+@import "variables";
+@import "mixins";
+@import "utils";
+@import "button";
+
+@import "header.scss";
 
 *,
 *::before,
@@ -19,4 +21,3 @@ html {
 body {
   box-sizing: border-box;
 }
-

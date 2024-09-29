@@ -1,27 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Vite App</title>
-</head>
-<body>
-<div id="app">
-    <header class="header"></header>
-    <main>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__logo">
+          <img src="./src/assets/image/logo.png" alt="logo" />
+        </div>
+        <nav class="navigation">
+          <div class="navigation__wrapper">
+            <div class="navigation__top">
+              
+                <li class="navigation__info">
+                    <li class="navigation__info-item paragraph"><a href="#">2464 Royal Ln. Mesa, New York</a></li>
+                    <li class="navigation__info-item paragraph"><a href="mailto:#">Info @golzergmail.com</a></li>
+                    <li class="navigation__info-item paragraph"><a href="#">Mon - Sat 8:00 - 18:20</a></li>
+                </li>
+             
+              <li class="navigation__social">
+                <ul class="navigation__social-item"><a href="#"><img src="./src/assets/image/Facebook.svg" alt="Facebook"></a></ul>
+                <ul class="navigation__social-item"><a href="#"><img src="./src/assets/image/Instragram.svg" alt="Instragram"></a></ul>
+                <ul class="navigation__social-item"><a href="#"><img src="./src/assets/image/Twitter.svg" alt="Twitter"></a></ul>
+                <ul class="navigation__social-item"><a href="#"><img src="./src/assets/image/Linkedin_Icon.svg" alt="Linkedin"></a></ul>
+              </li>
+            </div>
+            <div class="navigation__bottom">
+              <li class="navigatoin__menu">
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">Home</a>
+                </ul>
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">About</a>
+                </ul>
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">Projects</a>
+                </ul>
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">Testimonails</a>
+                </ul>
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">Team</a>
+                </ul>
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">Pricing</a>
+                </ul>
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">Blog</a>
+                </ul>
+                <ul class="navigation__menu-item">
+                  <a href="#" class="paragraph">Contact</a>
+                </ul>
+              </li>
+            </div>
+        </div>
+        <div class="navigation__phone">
+          <a href="tel:+#" class="navigation__phone-link">
+              <img src="./src/assets/image/phone.png" alt="phone">
+          </a>
+          <div class="navigation__phone-text">
+              <p>Call us any time</p>
+              <a href="tel:+(704) 555-0127">(704) 555-0127</a>
+          </div>
+        </div>
+        </nav>
+      </header>
+      <main>
         <section class="hero-section"></section>
         <section class="services"></section>
         <section class="about" id="about"></section>
@@ -32,10 +95,9 @@
         <section class="team" id="team"></section>
         <section class="price" id="price"></section>
         <section class="blog" id="blog"></section>
-    </main>
-    <footer class="footer" id="contact">
-    </footer>
-</div>
-<script type="module" src="/main.js"></script>
-</body>
+      </main>
+      <footer class="footer" id="contact"></footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
