@@ -12,3 +12,13 @@
     display: flex;
     justify-content: space-between;
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 90em {
+    @media only screen and (max-width: 90em) {
+      @content
+    }
+    //1440px
+  }
+}
+

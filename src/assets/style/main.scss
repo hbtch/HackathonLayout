@@ -12,6 +12,9 @@
 @import "blocks/testimonials-section";
 @import "blocks/team-section";
 
+
+@import "responsive_proc-team-test";
+
 *,
 *::before,
 *::after {
@@ -23,6 +26,7 @@
 html {
   font-size: 62.5%; // 10px
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

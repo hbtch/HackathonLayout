@@ -1,0 +1,14 @@
+@include respond(90em) {
+  .process .container,
+  .team .container,
+  .testimonials .container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  .process_content-wrapper {
+    height: fit-content;
+  }
+
+}
+
