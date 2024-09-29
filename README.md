@@ -36,7 +36,7 @@
 
 ## Ссылка на проект
 
-[HackathonLayout]()
+[HackathonLayout](https://hackathon-layout.vercel.app/)
 
 ## Установка и запуск
 
