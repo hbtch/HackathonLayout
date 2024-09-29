@@ -5,6 +5,20 @@
 
 @import "header.scss";
 
+@import "blocks/about";
+@import "blocks/status-company";
+
+@import "./hero-section.scss";
+
+@import "blocks/process-section";
+@import "blocks/testimonials-section";
+@import "blocks/team-section";
+@import "blocks/footer";
+@import "blocks/projects";
+
+
+@import "responsive_proc-team-test";
+
 *,
 *::before,
 *::after {
@@ -16,6 +30,7 @@
 html {
   font-size: 62.5%; // 10px
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {

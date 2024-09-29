@@ -1,19 +1,32 @@
 .button,
 .button:link,
-.button:visited, {
+.button:visited {
   font-family: 'Jost', sans-serif;
+  text-decoration: none;
   padding: 1.7rem 3.5rem;
   display: flex;
   align-items: center;
   font-size: $font-size-base;
+  font-weight: $weight-bold-m;
+  text-transform: capitalize;
   gap: 1rem; //отступ между текстом с стрелкой
   border: solid 1px transparent;
   transition: all 0.3s;
 }
 
-.button-orange {
+.button:hover {
+  cursor: pointer;
+}
+
+.button-orange,
+.button-orange:visited,
+.button-orange:link {
   background-color: $orange;
   color: $white;
+
+  & svg path {
+    fill: $white;
+  }
 }
 
 .button-orange:hover,
@@ -21,12 +34,22 @@
   background-color: $white;
   border-color: $black;
   color: $black;
+
+  & svg path {
+    fill: $black;
+  }
 }
 
-.button-white {
+.button-white,
+.button-white:visited,
+.button-white:link {
   background-color: $white;
   border-color: $black;
   color: $black;
+
+  & svg path {
+    fill: $black;
+  }
 }
 
 .button-white:hover,
@@ -34,4 +57,8 @@
   background-color: $orange;
   border-color: transparent;
   color: $white;
+
+  & svg path {
+    fill: $white;
+  }
 }

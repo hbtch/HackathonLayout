@@ -1,0 +1,199 @@
+@import '../utils.scss';
+@import '../variables.scss';
+@import '../button';
+
+.about-us {
+    max-width: 192rem;
+    margin: 0 auto;
+    padding: 0 $padding-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10rem; //потом изменить
+    margin-bottom: 10rem;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0rem;
+        right: 0; 
+        background-image: url("../image/Architecture.png");
+        background-size: cover;
+        width: 28.6rem;
+        height: 54.5rem;
+        transform: translateX(-0%);
+    }
+}
+
+.about-us-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 3rem;
+
+        &-head-sub {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0;
+            gap: 10px; //позже изменить на нужное значение
+            flex-grow: 1;
+
+            &-subtitle {
+                @extend .sub-heading; 
+                text-align: left;
+            }
+
+            &-line {
+                width: 1.5rem;
+                height: 0.2rem; 
+                background-color: orange; 
+            }
+        }
+    }
+
+.about-us-info {
+    width: 43.9rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-grow: 1;
+
+    &-description {
+        @extend .paragraph;
+        text-align: left;
+        margin-bottom: 1.2rem; // Вернуться сюда
+    }
+}
+
+.about-us-info-experience {
+        width: 43.9rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+        justify-content: space-between;
+
+        &-button {
+            @extend .button;
+            @extend .button-orange;
+            width: 17.4rem;
+            height: 6rem;
+            text-decoration: none;
+            white-space: nowrap; 
+        }
+}
+
+.about-us-content-title {
+    &-right {
+        @extend .heading; 
+        text-align: left;
+        padding-top: 2rem;
+    }
+}
+
+.about-us-info-experience-text {
+    position: relative;
+    font-size: $font-size-large;
+    color: $black;
+    font-weight: $weight-bold-m;
+
+    &-wrap {
+        font-family: $font-family;
+        position: relative;
+        display: inline-block;
+        text-wrap: nowrap;
+    }
+
+    &-wrap::after {
+        content: attr(data-text); 
+        position: absolute;
+        top: 65%; 
+        left: 0;
+        transform: scaleY(-1); 
+        color: rgba(0, 0, 0, 0.2); 
+        font-size: $font-size-large; 
+        line-height: 1; 
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        mask-size: 100% 50%; 
+        mask-position: bottom;
+        mask-repeat: no-repeat;
+    }
+}
+
+
+.about-us__slider {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem; //исправить
+}
+
+.about-us__slider-item {
+        position: relative;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+    img {
+        width: 41.6rem;
+        height: 33.2rem;
+        object-fit: cover;
+    }
+
+    &-content {
+        position: absolute;
+        font-size: $font-size-large;
+        font-weight: $weight-bold-m;
+        font-family: $font-family;
+        color: $white;
+        z-index: 1;
+        white-space: nowrap; 
+        text-align: center; 
+        line-height: 131%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        bottom: 1rem; 
+        left: 50%;
+        transform: translateX(-50%); 
+        background-color: rgba(97, 97, 97, 0.5); 
+        border-radius: 0.5rem; 
+        padding: 0 0.2rem;
+    }
+}
+
+.about-us__arrow {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    button {
+        all: unset;
+        background: none;
+        border: none;
+        font-size: 3rem;
+        color: $orange;
+        cursor: pointer;
+
+        &:hover {
+            color: darken($orange, 10%);
+        }
+    }
+
+    &-left {
+        transform: rotate(180deg); 
+    }
+
+    &-right {
+        transform: rotate(0deg); 
+    }
+}
+
+

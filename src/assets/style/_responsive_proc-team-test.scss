@@ -1,0 +1,140 @@
+@import "mixins";
+
+@include respond(90em) {
+  .process .container,
+  .team .container,
+  .testimonials .container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  .process_content-wrapper {
+    height: fit-content;
+  }
+
+  .testimonials_box-text {
+    margin: 2.5rem 0;
+  }
+}
+
+@include respond(72em) {
+  .process {
+    & .heading, {
+    text-align: center;
+  }
+
+    .progress-tab-list {
+      margin: 3.5rem 0;
+    }
+
+    .tab-list {
+      &_item {
+        height: 13rem;
+      }
+
+      &_item-active {
+        height: 14.5rem;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 89%, 60% 89%, 50% 100%, 40% 89%, 0% 89%);
+      }
+    }
+  }
+}
+
+@include respond(48em) {
+  .process {
+    .progress-tab-list {
+      flex-direction: column;
+    }
+
+    .tab-list {
+      &_item {
+        height: auto;
+      }
+
+      &_item-active {
+        height: auto;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+    }
+  }
+
+  .testimonials {
+    & .container {
+      border-bottom: none;
+    }
+
+      & .heading br {
+      display: none;
+    }
+
+    &_box {
+      flex-direction: column;
+      gap: 5rem;
+
+      &-bg {
+        display: none;
+      }
+    }
+
+    &_slider {
+       height: 50rem;
+    }
+
+    &Wrapper {
+      gap: 1.5rem;
+      min-height: 50rem;
+    }
+
+    & &_signature {
+      border-bottom: none;
+    }
+
+    .author_photo-list {
+      align-self: center;
+      flex-direction: row;
+      min-height: 17rem;
+    }
+
+    .author_photo-item {
+      width: 11rem;
+      height: 11rem;
+
+      &-active {
+        width: 17rem;
+        height: 17rem;
+      }
+    }
+  }
+
+  .team {
+    & .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
+
+  &_text-box {
+    max-width: 50rem;
+    align-items: center;
+
+  }
+
+    &-photo-wrapper {
+    max-width: 41.6rem;
+    height: fit-content;
+    overflow: hidden;
+  }
+
+  & .paragraph {
+    max-width: 100%;
+     margin: 3rem 0;
+  }
+
+  &_list {
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  }
+}
