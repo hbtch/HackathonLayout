@@ -17,7 +17,7 @@
         content: '';
         position: absolute;
         top: 0rem;
-        right: 0; 
+        right: 0;
         background-image: url("../image/Architecture.png");
         background-size: cover;
         width: 28.6rem;
@@ -43,14 +43,14 @@
             flex-grow: 1;
 
             &-subtitle {
-                @extend .sub-heading; 
+                @extend .sub-heading;
                 text-align: left;
             }
 
             &-line {
                 width: 1.5rem;
-                height: 0.2rem; 
-                background-color: orange; 
+                height: 0.2rem;
+                background-color: orange;
             }
         }
     }
@@ -84,13 +84,13 @@
             width: 17.4rem;
             height: 6rem;
             text-decoration: none;
-            white-space: nowrap; 
+            white-space: nowrap;
         }
 }
 
 .about-us-content-title {
     &-right {
-        @extend .heading; 
+        @extend .heading;
         text-align: left;
         padding-top: 2rem;
     }
@@ -110,16 +110,16 @@
     }
 
     &-wrap::after {
-        content: attr(data-text); 
+        content: attr(data-text);
         position: absolute;
-        top: 65%; 
+        top: 65%;
         left: 0;
-        transform: scaleY(-1); 
-        color: rgba(0, 0, 0, 0.2); 
-        font-size: $font-size-large; 
-        line-height: 1; 
+        transform: scaleY(-1);
+        color: rgba(0, 0, 0, 0.2);
+        font-size: $font-size-large;
+        line-height: 1;
         mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-        mask-size: 100% 50%; 
+        mask-size: 100% 50%;
         mask-position: bottom;
         mask-repeat: no-repeat;
     }
@@ -156,20 +156,21 @@
         font-family: $font-family;
         color: $white;
         z-index: 1;
-        white-space: nowrap; 
-        text-align: center; 
+        white-space: nowrap;
+        text-align: center;
         line-height: 131%;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        bottom: 1rem; 
+        bottom: 1rem;
         left: 50%;
-        transform: translateX(-50%); 
-        background-color: rgba(97, 97, 97, 0.5); 
-        border-radius: 0.5rem; 
+        transform: translateX(-50%);
+        background-color: rgba(97, 97, 97, 0.5);
+        border-radius: 0.5rem;
         padding: 0 0.2rem;
     }
 }
 
 .about-us__arrow {
+    margin-top: 3.7rem;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -188,11 +189,11 @@
     }
 
     &-left {
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
     }
 
     &-right {
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
     }
 }
 
@@ -205,8 +206,8 @@
         display: none;
     }
 
-    .about-us-info-experience-button { 
-        display: none; 
+    .about-us-info-experience-button {
+        display: none;
     }
 }
 
@@ -220,7 +221,7 @@
     }
 
     .about-us-info-experience-button {
-        display: none; 
+        display: none;
     }
 }
 
@@ -234,7 +235,7 @@
     }
 
     .about-us-info-experience-button {
-        display: none; 
+        display: none;
     }
 }
 
@@ -242,7 +243,7 @@
     .about-us {
         width: 100%;
     }
-    
+
     .about-us::after {
         display: none;
     }
@@ -252,7 +253,7 @@
         flex-direction: column;
     }
     .about-us-info-experience-button {
-        display: none; 
+        display: none;
     }
 
     .about-us-content {
