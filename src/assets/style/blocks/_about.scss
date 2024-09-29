@@ -7,13 +7,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
+    top: 10rem; //потом изменить
     position: relative;
 
     &::after {
         content: '';
         position: absolute;
-        top: 10rem;
+        top: 0rem;
         right: 0; 
         background-image: url("../image/Architecture.png");
         background-size: cover;
@@ -57,7 +57,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     flex-grow: 1;
 
     &-description {
@@ -65,11 +65,13 @@
         text-align: left;
         margin-bottom: 1.2rem; // Вернуться сюда
     }
+}
 
-    &-experience {
+.about-us-info-experience {
         width: 43.9rem;
         display: flex;
         flex-direction: row;
+        gap: 5rem;
         align-items: center;
         justify-content: space-between;
 
@@ -79,17 +81,10 @@
             width: 17.4rem;
             height: 6rem;
             text-decoration: none;
-
-            &-link {
-                width: 17.4rem;
-                height: 6rem;
-                white-space: nowrap; 
-                @extend .button;
-                @extend .button-orange;
-            }
+            white-space: nowrap; 
         }
-    }
 }
+
 .about-us-content-title {
     &-right {
         @extend .heading; 
@@ -97,6 +92,7 @@
         padding-top: 2rem;
     }
 }
+
 .about-us-info-experience-text {
     position: relative;
     font-size: $font-size-large;
@@ -147,7 +143,6 @@
         height: 33.2rem;
         object-fit: cover;
     }
-
 
     &-content {
         position: absolute;

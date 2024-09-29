@@ -3,8 +3,10 @@ const videoSrc = [
     'src/assets/video/permitting.mp4',
     'src/assets/video/foundation.mp4'
 ];
+
 const tabList = document.querySelector('.progress-tab-list');
 const tabItems = tabList.querySelectorAll('.tab-list_item');
+
 const processVideo = document.querySelector('.process-video');
 const playBtn = document.querySelector('.play-btn');
 export function processSection() {
