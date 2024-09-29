@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	];
 
 	const imageSources = [
-			"./src/assets/image/Projects/Project1.jpg",
-			"./src/assets/image/Projects/Project2.jpg",
-			"./src/assets/image/Projects/Project3.jpg",
-			"./src/assets/image/Projects/Project4.jpg",
-			"./src/assets/image/Projects/Project5.jpg",
-			"./src/assets/image/Projects/Project6.jpg",
+			"src/assets/image/Projects/Project1.jpg",
+			"src/assets/image/Projects/Project2.jpg",
+			"src/assets/image/Projects/Project3.jpg",
+			"src/assets/image/Projects/Project4.jpg",
+			"src/assets/image/Projects/Project5.jpg",
+			"src/assets/image/Projects/Project6.jpg",
 	];
 
 	const slidesContainer = document.querySelector(".projects__slides");
