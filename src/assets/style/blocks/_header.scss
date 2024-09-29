@@ -10,15 +10,15 @@ a {
 }
 
 .header__logo {
+  position: relative;
+  z-index: 5;
   padding: 0 264px 0 63px;
-  //display: inline-block;
   height: 15.6rem;
-  width: 57.8rem;
+  //width: 57.8rem;
   background-image: url(../image/logo_bg.png);
-  //background-image: url(../image/logo_bg.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   margin-right: auto;
 }
 .navigation {
@@ -114,7 +114,7 @@ a {
     gap: 1.4rem;
     margin-right: 9.9rem;
     margin-left: 2.3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
 
     &-link {
       padding: 2rem;
@@ -145,10 +145,10 @@ a {
   width: 100%;
   max-width: 192rem;
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, $black 0% 94%, transparent 94% 100%);
+  background-image: linear-gradient(to bottom, $black 0% 93%, transparent 93% 100%);
 }
-
-.header {
-  background-image: linear-gradient(to right, $orange 0% 30%, $black 70% 100%);
-}
+//
+//.header {
+//  background-image: linear-gradient(to right, $orange 0% 30%, $black 70% 100%);
+//}
 
