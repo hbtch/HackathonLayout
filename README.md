@@ -3,9 +3,13 @@
 Добро пожаловать на сайт строительной компании, реализованный для благотворительного хакатона Натальи Давыдовой
 
 **Команда #4** :computer:
+
 [Гульназ](https://github.com/hbtch)
+
 [Алена](https://github.com/radomskaia)
+
 [Таисия](https://github.com/TaisNch)
+
 [Алексей](https://github.com/AlekseyZher)
 
 # Что реализовано? 
