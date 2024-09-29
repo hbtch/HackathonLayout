@@ -24,9 +24,18 @@ export function processSection() {
     playBtn.addEventListener('click', (e) => {
         playBtn.classList.toggle('play-btn-hidden');
         processVideo.play()
+        processVideo.controls = true;
     })
 
-    processVideo.addEventListener('ended', (e) => playBtn.classList.toggle('play-btn-hidden'))
+    processVideo.addEventListener('ended', (e) => {
+        processVideo.controls = false;
+        playBtn.classList.toggle('play-btn-hidden')
+    })
+
+    processVideo.addEventListener('pause', (e) => {
+        processVideo.controls = false;
+        playBtn.classList.toggle('play-btn-hidden')
+    })
 }
 
 processSection()

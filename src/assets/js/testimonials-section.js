@@ -1,6 +1,6 @@
 const testimonials = [
     {
-        text: 'We couldn\'t be happier with the outcome. The team was incredibly professional, attentive to details, and always kept us in the loop.',
+        text: 'We couldn\'t be happier with the outcome. The team was incredibly professional, attentive to details, and always kept us in the loop. Highly recommend!',
         name: 'Michael Johnson',
         jobTitle: 'Interior Designer',
         photoSrc: 'src/assets/image/testimonials/johnson.jpg'
@@ -12,7 +12,7 @@ const testimonials = [
         photoSrc: 'src/assets/image/testimonials/simmons.jpg'
     },
     {
-        text: 'An absolute pleasure to work with. They listened to all our needs and executed every detail perfectly. Our space feels both functional and stunning, exactly how we envisioned it. Highly recommend!',
+        text: 'An absolute pleasure to work with. They listened to all our needs and executed every detail perfectly. Our space feels both functional and stunning, exactly how we envisioned it.',
         name: 'Sophia Martinez',
         jobTitle: 'Creative Director',
         photoSrc: 'src/assets/image/testimonials/martinez.jpg'
