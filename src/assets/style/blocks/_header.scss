@@ -1,0 +1,154 @@
+@import "../variables";
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__logo {
+  padding: 0 264px 0 63px;
+  //display: inline-block;
+  height: 15.6rem;
+  width: 57.8rem;
+  background-image: url(../image/logo_bg.png);
+  //background-image: url(../image/logo_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: auto;
+}
+.navigation {
+
+  &__wrapper {
+    padding: 0 0 0 2rem;
+    margin-left: -4rem;
+    //background-color: $black;
+    flex-grow: 1;
+    height: 100%;
+    border-right: solid 1px #FFFFFF1A;
+
+  }
+
+  &__bottom {
+    border-top: solid 1px #FFFFFF1A;
+    padding: 0 4rem 0 6rem;
+  }
+
+  &__top {
+    padding: 1.6rem 4rem 1.6rem 6rem;
+  }
+
+  &__info {
+    gap: 5rem;
+
+      &-item {
+      gap: 1rem;
+    }
+
+    &-item a {
+      &:link, &:visited {
+        font-size: 1.4rem;
+        font-weight: $weight-regular;
+        line-height: 1.7;
+        color: #cdcdcd;
+        font-family: Barlow, sans-serif;
+      }
+    }
+  }
+
+  &__social {
+    gap: 2rem;
+    margin-left: auto;
+  }
+
+  &__menu {
+    gap: 5rem;
+
+    &-item .paragraph {
+
+      &:link,
+      &:visited {
+        position: relative;
+        display: inline-block;
+        padding: 2.6rem 0 3.6rem 0;
+        font-family: Barlow, sans-serif;
+        font-size: $font-size-base;
+        font-weight: $weight-bold-l;
+        line-height: 1.6;
+        cursor: pointer;
+        color: white;
+        //border-bottom: 4px solid $black;
+        transition: all 0.2s;
+      }
+
+      &::after {
+        content: '';
+        width: 110%;
+        height: 4px;
+        background-color: transparent;
+        position: absolute;
+        left: 0;
+        bottom: 7px;
+        transition: all 0.2s;
+      }
+
+      &:hover,
+      &:active {
+        color: $orange;
+        //border-bottom: 4px solid $orange;
+      }
+
+      &:hover::after,
+      &:active::after {
+        background-color: $orange;
+      }
+    }
+  }
+
+  &__phone {
+
+    gap: 1.4rem;
+    margin-right: 9.9rem;
+    margin-left: 2.3rem;
+    margin-bottom: 0.5rem;
+
+    &-link {
+      padding: 2rem;
+      background: $orange;
+    }
+
+    &-text {
+      & p {
+        font-size: 1.4rem;
+        font-weight: $weight-regular;
+        line-height: 1.7;
+        color: #cdcdcd;
+        font-family: Barlow, sans-serif;
+      }
+
+      & a {
+        font-size: $font-size-base;
+        color: $white;
+        font-weight: $weight-bold-m;
+        font-family: Jost, sans-serif;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+.header_container {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, $black 0% 94%, transparent 94% 100%);
+}
+
+.header {
+  background-image: linear-gradient(to right, $orange 0% 30%, $black 70% 100%);
+}
+
