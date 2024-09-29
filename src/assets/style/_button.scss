@@ -14,7 +14,13 @@
   transition: all 0.3s;
 }
 
-.button-orange {
+.button:hover {
+  cursor: pointer;
+}
+
+.button-orange,
+.button-orange:visited,
+.button-orange:link {
   background-color: $orange;
   color: $white;
 
@@ -34,7 +40,9 @@
   }
 }
 
-.button-white {
+.button-white,
+.button-white:visited,
+.button-white:link {
   background-color: $white;
   border-color: $black;
   color: $black;
