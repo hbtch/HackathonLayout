@@ -145,7 +145,25 @@
                             </div>
                         </div>
                 </section>
-        <section class="projects" id="projects"></section>
+                <section class="projects" id="projects">
+                    <div class="projects__wrapper">
+                      <div class="projects__header">
+                     <div class="projects__title">
+                        <div class="projects__line-wrapper">
+                         <img class="projects__line" src="./src/assets/image/Line-orange.png" alt="">
+                         <p class="sub-heading">Our Projects</p>
+                        </div>
+                     <p class="heading">Trusted & Reliable</p>
+                     </div>
+                     <div class="projects__buttons">
+                         <button class=" projects__button projects__button--left">←</button>
+                         <button class="projects__button projects__button--right">→</button>
+                     </div>
+                    </div>
+                     <div class="projects__gallery">
+                         <div class="projects__slides">
+                         </div>
+                 </section>
         <section class="process">
             <div class="container flex flex_column flex_center">
                 <h2 class="sub-heading">How To Process</h2>
@@ -236,11 +254,61 @@
         <section class="blog" id="blog"></section>
 
       </main>
-      <footer class="footer" id="contact"></footer>
+      <footer class="footer" id="contact">
+        <div class="footer__map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa598834427f750b188a578d770421e14507012a198446b0a46a50463950dbe8f&amp;source=constructor"
+                width="100%" height="100%" frameborder="0"></iframe></div>
+        <div class="footer__newsletter">
+            <p class="footer__newsletter-text">Sign up for our newsletter <br>To get weekly updates</p>
+          <div class="footer__newsletter-emailwrapper">
+            <input class="footer__newsletter-input" type="text" name="email" placeholder="Enter Your Email" />
+            <button class="footer__newsletter-button">
+            </button>
+          </div>          
+          </div>
+        <div class="footer__info">
+            <div class="footer__info-wrapper">
+                <img class="footer__logo" src="./src/assets/image/Logo-footer.png" alt="logo"/>
+                <p class="footer__welcome">Welcome to consaik, a leader in the industry/sector  since 
+                    With a passion for excellence and a commitment</p>
+                <p class="footer__availability">We are available</p>
+                <p class="footer__hours">Mon-Sat: 8:00am to 17:00pm</p>
+            </div>
+            <div class="footer__links">
+                <p class="footer__links-title">Quick Links</p>
+                <a class="footer__link" href="#">About us</a>
+                <a class="footer__link" href="#">Our services</a>
+                <a class="footer__link" href="#">Our pricing</a>
+                <a class="footer__link" href="#">Our team</a>
+                <a class="footer__link" href="#">Contact us</a>
+            </div>
+            <div class="footer__info-section">
+                <p class="footer__info-title">Information</p>
+                <a class="footer__info-link" href="#">Regulatory Compliance</a>
+                <a class="footer__info-link" href="#">A sustainable Future</a>
+                <a class="footer__info-link" href="#">Architectural Design</a>
+                <a class="footer__info-link" href="#">Structural Engineering</a>
+                <a class="footer__info-link" href="#">Environmental Impact</a>
+            </div>
+            <div class="footer__social">
+                <p class="footer__social-title">Social Media</p>
+                <a class="footer__social-link" href="#">Facebook</a>
+                <a class="footer__social-link" href="#">Instagram</a>
+                <a class="footer__social-link" href="#">Twitter</a>
+                <a class="footer__social-link" href="#">YouTube</a>
+                <a class="footer__social-link" href="#">LinkedIn</a>
+            </div>
+            
+        </div>
+        <div class="footer__copyright">© 1995-2024 All rights for Conbuild exclusive</div>
+</div>
+</footer>
     </div>
     <script type="module" src="/src/assets/js/team-section.js"></script>
     <script type="module" src="/src/assets/js/testimonials-section.js"></script>
     <script type="module" src="/src/assets/js/process-section.js"></script>
+    <script type="module" src="/src/assets/js/projectsSlyder.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
