@@ -145,6 +145,13 @@ Height: 4vh;
   font-weight: $weight-regular;
   margin-top: 2rem;
 }
+.footer__list-item,
+.footer__info-item,
+.footer__social-item {
+list-style-type: none;
+}
+
+
 
 .footer__hours {
   color: $orange;
