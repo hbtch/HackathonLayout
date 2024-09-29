@@ -78,7 +78,7 @@ async function createTestimonial(testimonial, className) {
         appendParent: testimonialsSignature,
         classList: 'quote-icon',
         attributes: {
-            src: "src/assets/image/quote.png",
+            src: "images/quote.png",
             alt: "quote icon",
         },
     })

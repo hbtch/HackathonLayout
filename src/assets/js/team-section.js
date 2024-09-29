@@ -1,8 +1,8 @@
 const teamSrc = [
-    'src/assets/image/team/waren.jpeg',
-    'src/assets/image/team/simmons.jpeg',
-    'src/assets/image/team/duoing.jpeg',
-    'src/assets/image/team/howard.jpeg',
+    '/images/team/waren.jpeg',
+    '/images/team/simmons.jpeg',
+    '/images/team/duoing.jpeg',
+    '/images/team/howard.jpeg',
 ];
 
 const teamList = document.querySelector('.team_list');

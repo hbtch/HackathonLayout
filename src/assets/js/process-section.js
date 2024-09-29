@@ -1,7 +1,7 @@
 const videoSrc = [
-    'src/assets/video/planning.mp4',
-    'src/assets/video/permitting.mp4',
-    'src/assets/video/foundation.mp4'
+    '/video/planning.mp4',
+    '/video/permitting.mp4',
+    '/video/foundation.mp4'
 ];
 
 const tabList = document.querySelector('.progress-tab-list');
