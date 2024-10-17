@@ -11,18 +11,18 @@
       url("../image/hero_bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 850px;
+    height: 85rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 54px;
+    gap: 5.4rem;
 
     .hero-section__info {
-      max-width: 901px;
+      max-width: 90.1rem;
 
       h1 {
         color: $white;
-        font-size: 158px;
+        font-size: 15.8rem;
         font-weight: $weight-bold-m;
         line-height: 0.87;
         text-transform: capitalize;
@@ -57,15 +57,43 @@
   }
   &__tractor {
     position: absolute;
-    width: 539px;
-    height: 347px;
-    left: 30%;
-    top: 655px;
+    width: 500px;
+    height: 320px;
+    left: 32%;
+    top: 75.5rem;
   }
   &__hook {
     position: absolute;
     width: 78px;
     height: 237px;
     left: 69px;
+  }
+}
+@media (max-width: 2560px) {
+  .hero-section__content {
+    gap: 40.4rem;
+  }
+  .hero-section__tractor {
+    left: 40%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero-section__content {
+    width: 100%;
+  }
+
+  .hero-section__tractor {
+    width: 300px;
+    height: 200px;
+    top: 85.5rem;
+  }
+
+  .hero-section__info {
+    width: 60.1rem;
+
+    h1 {
+      font-size: 12rem;
+    }
   }
 }

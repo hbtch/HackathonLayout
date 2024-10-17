@@ -1,5 +1,16 @@
 @import "../variables";
 
+.header {
+  background-image: linear-gradient(to right, $orange 0% 30%, $black 70% 100%);
+}
+
+.header_container {
+  width: 100%;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, $black 0% 94%, transparent 94% 100%);
+}
+
 ul,
 li {
   list-style-type: none;
@@ -21,6 +32,7 @@ a {
   background-position: center;
   margin-right: auto;
 }
+
 .navigation {
 
   &__wrapper {
@@ -110,7 +122,6 @@ a {
   }
 
   &__phone {
-
     gap: 1.4rem;
     margin-right: 9.9rem;
     margin-left: 2.3rem;
@@ -141,14 +152,26 @@ a {
   }
 }
 
-.header_container {
-  width: 100%;
-  max-width: 192rem;
-  margin: 0 auto;
-  background-image: linear-gradient(to bottom, $black 0% 94%, transparent 94% 100%);
+@media (max-width: 2560px) {
+  .header_container {
+    width: 100%;
+    max-width: 256rem;
+  }
+  .header__logo {
+    padding: 0 300px 0 0px;
+    height: 15.6rem;
+    width: 57.8rem;
+  }
 }
 
-.header {
-  background-image: linear-gradient(to right, $orange 0% 30%, $black 70% 100%);
+@media (max-width: 1440px) {
+  .header_container {
+    width: 100%;
+    max-width: 144rem;
+  }
+  .header__logo {
+    padding: 0;
+    height: 15.6rem;
+    width: 57.8rem;
+  }
 }
-
