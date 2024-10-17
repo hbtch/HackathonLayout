@@ -25,7 +25,6 @@ a {
   z-index: 5;
   padding: 0 264px 0 63px;
   height: 15.6rem;
-  //width: 57.8rem;
   background-image: url(../image/logo_bg.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -168,10 +167,12 @@ a {
   .header_container {
     width: 100%;
     max-width: 144rem;
+    height: 12rem;
   }
   .header__logo {
-    padding: 0;
-    height: 15.6rem;
+    padding: 0 120px 0 120px;
+    height: 15rem;
+    height: 15rem;
     width: 57.8rem;
   }
 }
